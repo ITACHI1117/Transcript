@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>User Login</h1>
+    </nav>
+    <section class="first-section">
+      <form action="Login.php" method="post" enctype="multipart/form-data">
+        <div>
+          <div class="label">
+            <label for="">Username</label><input name="username" type="text" />
+          </div>
+          <div>
+            <label for="">Password</label
+            ><input name="password" type="password" />
+          </div>
+          <div>
+            <label for="">User Type</label
+            ><select name="status" type="text">
+              <option value="Select User">Select User</option>
+              <option value="Admin">Administrator</option>
+              <option value="Staff">STAFF</option>
+            </select>
+          </div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

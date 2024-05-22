@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding: 20px;
+  background-color: #72abbf;
+  color: white;
+}
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.first-section label {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.first-section div {
+  margin-bottom: 15px;
+}
+.first-section input {
+  height: 20px;
+  width: 200px;
+}
+.first-section select {
+  width: 200px;
+}
+.first-section button {
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}

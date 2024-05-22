@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    .header_section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header_section h1 {
+      margin-bottom: 10px;
+    }
+    .header_section h2 {
+      color: red;
+      margin-bottom: 10px;
+    }
+    nav {
+      padding: 20px;
+      background-color: #72abbf;
+      color: white;
+    }
+    .label_and_input {
+      display: flex;
+      flex-direction: row;
+    }
+    section {
+      padding-top: 15px;
+      padding-left: 10px;
+    }
+    .left_table {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      background-color: #d5d2d2;
+      padding-left: 10px;
+      height: 35px;
+    }
+    .left_table_submit {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      background-color: transparent;
+      padding-left: 10px;
+      height: 35px;
+      cursor: pointer;
+    }
+    .right_input {
+      margin-top: 5px;
+    }
+    .right_input input {
+      width: 300px;
+    }
+    .right_input select {
+      width: 200px;
+    }
+    form button {
+      width: 100px;
+      margin-top: 10px;
+    }
+    .noDisplay {
+      display: none;
+    }
+  </style>
+  <body>
+    <section class="header_section">
+      <h1>Year One First Semester</h1>
+      <h2>Fill Details</h2>
+    </section>
+    <nav>
+      <h1>:: Add result Details ::</h1>
+    </nav>
+    <section>
+      <form
+        action="uploadResults.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="noDisplay"
+          type="text"
+          name="year"
+          value="YearOneFirstSemester"
+        />
+        <div class="label_and_input">
+          <div class="left_table"><p>Martic</p></div>
+          <div class="right_input"><input name="matric" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>gss 101</p></div>
+          <div class="right_input"><input name="gss101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Phy 101</p></div>
+          <div class="right_input"><input name="Phy101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Gss 101</p></div>
+          <div class="right_input"><input name="Gst101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Mth 101</p></div>
+          <div class="right_input"><input name="Mth101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Chm 101</p></div>
+          <div class="right_input"><input name="Chm101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>CIS 101</p></div>
+          <div class="right_input"><input name="CIS101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Mth 111</p></div>
+          <div class="right_input"><input name="Mth111" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Bio 151</p></div>
+          <div class="right_input"><input name="Bio151" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Phy 191</p></div>
+          <div class="right_input"><input name="Phy191" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table_submit"></div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

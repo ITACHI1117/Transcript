@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    .header_section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header_section h1 {
+      margin-bottom: 10px;
+    }
+    .header_section h2 {
+      color: red;
+      margin-bottom: 10px;
+    }
+    nav {
+      padding: 20px;
+      background-color: #72abbf;
+      color: white;
+    }
+    .label_and_input {
+      display: flex;
+      flex-direction: row;
+    }
+    section {
+      padding-top: 15px;
+      padding-left: 10px;
+    }
+    .left_table {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      background-color: #d5d2d2;
+      padding-left: 10px;
+      height: 35px;
+    }
+    .left_table_submit {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      background-color: transparent;
+      padding-left: 10px;
+      height: 35px;
+    }
+    .right_input {
+      margin-top: 5px;
+    }
+    .right_input input {
+      width: 300px;
+    }
+    .right_input select {
+      width: 200px;
+    }
+    form button {
+      width: 100px;
+    }
+    .noDisplay {
+      display: none;
+    }
+  </style>
+  <body>
+    <section class="header_section">
+      <h1>Year One Second Semester</h1>
+      <h2>Fill Details</h2>
+    </section>
+    <nav>
+      <h1>:: Add result Details ::</h1>
+    </nav>
+    <section>
+      <form
+        action="uploadResults.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="noDisplay"
+          type="text"
+          name="year"
+          value="YearOneSecondSemester"
+        />
+        <div class="label_and_input">
+          <div class="left_table"><p>Martic</p></div>
+          <div class="right_input"><input name="matric" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Phy 192</p></div>
+          <div class="right_input"><input name="Phy192" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Phy 101</p></div>
+          <div class="right_input"><input name="Phy101" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Mth 112</p></div>
+          <div class="right_input"><input name="Mth112" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>gst 102</p></div>
+          <div class="right_input"><input name="gst102" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Cis 102</p></div>
+          <div class="right_input"><input name="Css102" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Sta 112</p></div>
+          <div class="right_input"><input name="Sta112" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>CIS 102</p></div>
+          <div class="right_input"><input name="CIS102" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Mth 113</p></div>
+          <div class="right_input"><input name="Mth113" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>Phy 191</p></div>
+          <div class="right_input"><input name="Phy191" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table"><p>CIS 104</p></div>
+          <div class="right_input"><input name="CIS104" type="text" /></div>
+        </div>
+        <div class="label_and_input">
+          <div class="left_table_submit"></div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
